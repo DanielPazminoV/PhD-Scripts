@@ -1,0 +1,11 @@
+#!/bin/csh
+#
+set v = air
+@ y = 1954
+while ($y <= 2012)
+  echo $y
+##wget ftp://ftp.cdc.noaa.gov/Datasets/20thC_ReanV2/Dailies/pressure/air.sfc.1992.nc
+  wget --config=/etc/wgetrc ftp://ftp.cdc.noaa.gov/Datasets/20thC_ReanV2/Dailies/pressure/$v.$y.nc
+  @ y ++
+end
+exit
