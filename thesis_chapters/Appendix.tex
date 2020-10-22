@@ -1,0 +1,477 @@
+\appendix
+
+\chapter{Drought factor calculation}
+
+The drought factor formula, originally expressed as \textquotedblleft D\textquotedblright{}
+by \citet{Griffiths1999} is:
+
+\begin{equation}
+D=10.5\left(1-\exp^{-\left(I+30/40\right)}\left(\frac{\left(41y^{2}+y\right)}{\left(40y^{2}+y+1\right)}\right)\right)
+\end{equation}
+
+
+Where:
+
+$D$: Drought Factor. 
+
+$I$: Soil dryness index (mm equivalent). 
+
+The significant rain is any event that maximizes $y$, according to
+the following cases shown in table \ref{tab:Significant-rain-event}
+
+\begin{table}[h]
+\caption[Significant rain event cases for drought factor calculation]{Significant rain event cases. Adapted from \citet{Griffiths1999}
+\label{tab:Significant-rain-event}}
+
+
+\noindent \centering{}%
+\begin{tabular}{|c|c|c|}
+\hline 
+Case number & Significant rain factor & Conditions\tabularnewline
+\hline 
+\hline 
+1 & $y=\frac{N^{1.3}}{\left(N^{1.3}+P-2\right)}$ & If N $\geq$1 and P > 2\tabularnewline
+\hline 
+2 & $y$= $\frac{0.8^{1.3}}{\left(0.8^{1.3}+P-2\right)}$ & If N=0 and P >2\tabularnewline
+\hline 
+3 & y = 1 & If P $\leq$ 2\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+
+Where: 
+
+$N$: Time since the rain event in days. 
+
+$P$: Rainfall in mm during an event. 
+
+
+\chapter{Bushfire and heatwave dates}
+
+\newpage{}
+
+
+\section{Bushfire and heatwave dates included in the analysis}
+
+
+\subsection{Bushfire dates }
+
+
+\subsubsection{Department of Environment, Land, Water and Planning of Victoria,
+Australia }
+
+\begin{table}[H]
+\caption{Bushfire records from the Department of Environment, Land, Water and
+Planning used to analyse fire weather spatial patterns in Victoria,
+Australia. Bushfire events that occurred simultaneously with heatwaves
+defined using Nairn et al. (2009) definition were excluded. The table
+shows the start date 27 bushfire events. \label{tab:Bushfire records from the Department of Environment, Land, Water and Planning used to analyse fire weather spatial patterns in Victoria, Australia}}
+
+
+\centering{}%
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+\multicolumn{5}{|c|}{\textbf{Bushfire event dates (included in the analysis)}}\tabularnewline
+\hline 
+\multicolumn{5}{|c|}{Department of Environment, Land, Water and Planning}\tabularnewline
+\hline 
+\hline 
+17-Jan-1965 & 12-Feb-1977 & 31-Jan-1983 & 3-Jan-2003 & 11-Jan-2007\tabularnewline
+\hline 
+8-Jan-1969 & 7-Jan-1979 & 14-Jan-1985 & 8-Jan-2003 & 17-Dec-2009\tabularnewline
+\hline 
+14-Dec-1972 & 28-Dec-1980 & 25-Feb-1995 & 11-Jan-2005 & 1-Feb-2011\tabularnewline
+\hline 
+9-Jan-1975 & 15-Jan-1981 & 1-Jan-1998 & 1-Dec-2006 & \tabularnewline
+\hline 
+8-Feb-1975 & 13-Dec-1982 & 28-Jan-1999 & 10-Dec-2006 & \tabularnewline
+\hline 
+4-Feb-1977 & 16-Feb-1983 & 17-Dec-2002 & 20-Jan-2006 & \tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+
+
+\subsubsection{Risk Frontiers}
+
+\begin{table}[H]
+\caption{Bushfire records from the Risk Frontiers research centre's database.
+Bushfire events that occurred simultaneously with heatwaves defined
+using Pezza et al. (2012) definition were excluded. The table shows
+the start date 41 bushfire events.}
+
+
+\centering{}%
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+\multicolumn{5}{|c|}{\textbf{Bushfire event dates}}\tabularnewline
+\hline 
+\hline 
+\multicolumn{5}{|c|}{Risk Frontiers}\tabularnewline
+\hline 
+29-Jan-1961 & 1-Jan-1973 & 1-Feb-1983 & 2-Dec-1998 & 16-Jan-2007\tabularnewline
+\hline 
+17-Jan-1965 & 2-Jan-1973 & 7-Feb-1983 & 26-Jan-2003 & 30-Jan-2009\tabularnewline
+\hline 
+8-Feb-1967 & 3-Jan-1973 & 16-Feb-1983 & 11-Jan-2005 & 7-Feb-2009\tabularnewline
+\hline 
+31-Jan-1968 & 24-Jan-1973 & 14-Jan-1985 & 31-Dec-2005 & 23-Feb-2009\tabularnewline
+\hline 
+5-Feb-1968 & 12-Feb-1977 & 27-Dec-1990 & 19-Jan-2006 & 10-Jan-2010\tabularnewline
+\hline 
+18-Feb-1968 & 15-Jan-1978 & 25-Feb-1995 & 22-Jan-2006 & \tabularnewline
+\hline 
+19-Feb-1968 & 22-Dec-1980 & 21-Jan-1997 & 10-Dec-2006 & \tabularnewline
+\hline 
+8-Jan-1969 & 1-Jan-1981 & 1-Jan-1998 & 22-Dec-2006 & \tabularnewline
+\hline 
+8-Jan-1971 & 15-Feb-1982 & 18-Feb-1998 & 12-Jan-2007 & \tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+
+
+\subsection{Heatwave dates }
+
+
+\subsubsection{Nairn et al. (2009) }
+
+\begin{table}[H]
+\caption{Heatwave dates computed using Nairn et al. (2009) definition. Heatwave
+events that occurred simultaneously with fires recorded in the Department
+of Environment, Land, Water and Planning database were excluded. The
+table shows the start date 13 heatwave events. \label{tab:Heatwave dates computed using Nairn et al. (2009) definition}}
+
+
+\centering{}%
+\begin{tabular}{|c|c|c|c|}
+\hline 
+\multicolumn{4}{|c|}{\textbf{Heatwave events }}\tabularnewline
+\hline 
+\hline 
+\multicolumn{4}{|c|}{Nairn et \textit{al.} (2009) definition}\tabularnewline
+\hline 
+14-Jan-1962 & 29-Jan-1993 & 18-Feb-2001 & 29-Jan-2011\tabularnewline
+\hline 
+18-Jan-1982 & 11-Feb-1995 & 14-Feb-2007 & \tabularnewline
+\hline 
+6-Feb-1982 & 18-Feb-1997 & 8-Jan-2008 & \tabularnewline
+\hline 
+6-Jan-1988 & 2-Feb-2000 & 7-Feb-2010 & \tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+
+
+\subsubsection{Pezza et al. (2012) }
+
+\begin{table}[H]
+\caption{Heatwave dates computed using Pezza et al. (2012) definition. Heatwave
+events that occurred simultaneously with fires recorded in the Risk
+Frontier's database were excluded. The table shows the start date
+13 heatwave events. \label{tab:Heatwave dates computed using Pezza et al. (2012) definition}}
+
+
+\centering{}%
+\begin{tabular}{|c|c|c|c|}
+\hline 
+\multicolumn{4}{|c|}{\textbf{Heatwave events }}\tabularnewline
+\hline 
+\hline 
+\multicolumn{4}{|c|}{Pezza et \textit{al.} (2009) definition}\tabularnewline
+\hline 
+16-Feb-1968 & 15-Dec-1988 & 2-Feb-2000 & 30-Jan-2011\tabularnewline
+\hline 
+18-Feb-1969 & 31-Jan-1993 & 8-Feb-2000 & \tabularnewline
+\hline 
+19-Dec-1972 & 12-Jan-1998 & 28-Dec-2002 & \tabularnewline
+\hline 
+18-Jan-1973 & 23-Dec-1998 & 28-Jan-2009 & \tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+
+
+\section{Bushfire and heatwave dates excluded from the analysis}
+
+
+\subsection{Bushfire dates}
+
+
+\subsubsection{Department of Environment, Land, Water and Planning of Victoria,
+Australia }
+
+\begin{table}[H]
+\caption{Bushfire records from the Department of Environment, Land, Water and
+Planning excluded from the analysis because they occurred simultaneously
+with heatwave events defined using Nairn et al. (2009) criteria. }
+
+
+\centering{}%
+\begin{tabular}{|c|}
+\hline 
+\textbf{Bushfire event dates (excluded from the analysis)}\tabularnewline
+\hline 
+\hline 
+Department of Environment, Land, Water and Planning\tabularnewline
+\hline 
+4-Feb-2009\tabularnewline
+\hline 
+6-Feb-2009\tabularnewline
+\hline 
+7-Feb-2009\tabularnewline
+\hline 
+8-Feb-2009\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+
+
+\subsubsection{Risk Frontiers }
+
+\begin{table}[H]
+\caption{Bushfire records from Risk Frontiers research centre's database excluded
+from the analysis because they occurred simultaneously with heatwave
+events defined using Pezza et al. (2012) criteria. }
+
+
+\centering{}%
+\begin{tabular}{|c|}
+\hline 
+\textbf{Bushfire event dates (excluded from the analysis)}\tabularnewline
+\hline 
+\hline 
+Risk Frontiers\tabularnewline
+\hline 
+22-Feb-1967\tabularnewline
+\hline 
+1-Feb-2011\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+
+
+\subsection{Heatwave dates}
+
+
+\subsubsection{Nairn et al. (2009) }
+
+\begin{table}[H]
+\caption{Heatwave dates computed using Nairn et \textit{al.} (2009) definition
+that were excluded from the analysis because they occurred simultaneously
+with fires recorded in the Department of Environment, Land, Water
+and Planning database. }
+
+
+\centering{}%
+\begin{tabular}{|c|}
+\hline 
+\textbf{Heatwave event dates (excluded from the analysis)}\tabularnewline
+\hline 
+\hline 
+Nairn et al. (2009)\tabularnewline
+\hline 
+3-Feb-2009\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+
+
+\subsubsection{Pezza et al. (2012)}
+
+\begin{table}[H]
+\caption{Heatwave dates computed using Pezza et \textit{al.} (2012) definition
+that were excluded from the analysis because they occurred simultaneously
+with fires recorded in the Risk Frontiers database. }
+
+
+\centering{}%
+\begin{tabular}{|c|}
+\hline 
+\textbf{Heatwave event dates (excluded from the analysis)}\tabularnewline
+\hline 
+\hline 
+Pezza et al. (2012)\tabularnewline
+\hline 
+21-Feb-1967\tabularnewline
+\hline 
+13-Feb-1982\tabularnewline
+\hline 
+20-Jan-2006\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+
+
+\chapter{Weather stations details}
+
+\newpage{}
+
+
+\section{Victoria}
+
+\begin{table}[h]
+\caption{Victorian weather stations selected to compute hetwave dates. Data
+sourced from the Australian Climate Observations and Reference Network-Surface
+Air Temperature (ACORN-SAT) of the Australian Bureau of Meteorology.
+\label{tab:Victorian weather stations selected to compute hetwave dates} }
+
+
+\begin{centering}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+\textbf{Site name} & \textbf{Site number} & \textbf{Latitude} & \textbf{Longitude} & \textbf{Elevation (m)}\tabularnewline
+\hline 
+\hline 
+Melbourne Regional Office & 086071 & 37.81\textsuperscript{o}S & 144.97\textsuperscript{o}E & 31\tabularnewline
+\hline 
+Mildura & 076031 & 34.24\textsuperscript{o}S & 142.09\textsuperscript{o}E & 50\tabularnewline
+\hline 
+Nhill & 078015 & 36.31\textsuperscript{o}S & 141.65\textsuperscript{o}E & 139\tabularnewline
+\hline 
+Sale & 085072 & 38.12\textsuperscript{o}S & 147.13\textsuperscript{o}E & 5\tabularnewline
+\hline 
+\end{tabular}
+\par\end{centering}
+
+\end{table}
+
+
+\begin{table}[h]
+
+
+\caption[Victorian weather stations selected to investigate fire weather]{Victorian weather stations selected to investigate fire weather. Data
+sourced from the Australian Bureau of Meteorology. \label{tab:Victorian weather stations selected to investigate fire weather} }
+
+
+\centering{}%
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+\textbf{Site name} & \textbf{Site number} & \textbf{Latitude} & \textbf{Longitude} & \textbf{Elevation (m)}\tabularnewline
+\hline 
+\hline 
+Bendigo & 081003 & 36.76\textsuperscript{o}S & 144.28\textsuperscript{o}E & 208\tabularnewline
+\hline 
+Laverton & 087031 & 37.86\textsuperscript{o}S & 144.76\textsuperscript{o}E & 20\tabularnewline
+\hline 
+Melbourne Airport & 086282 & 37.68\textsuperscript{o}S & 144.84\textsuperscript{o}E & 113\tabularnewline
+\hline 
+Mildura & 076031 & 34.24\textsuperscript{o}S & 142.09\textsuperscript{o}E & 50\tabularnewline
+\hline 
+Nhill & 078015 & 36.31\textsuperscript{o}S & 141.65\textsuperscript{o}E & 139\tabularnewline
+\hline 
+Omeo & 083025 & 37.10\textsuperscript{o}S & 147.60\textsuperscript{o}E & 689\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+
+
+\section{Ecuador}
+
+\begin{table}[h]
+\noindent \begin{centering}
+\caption[Ecuadorian weather stations selected to investigate fire
+weather]{Ecuadorian weather stations selected to investigate fire
+weather. Data sourced from the Ecuadorian Institute for Meteorology
+and Hydrology (INAMHI). \label{tab:Table-1:Ecuadorian weather stations selected to investigate fire weather}}
+
+\par\end{centering}
+
+\noindent \centering{}%
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+\textbf{Site name} & \textbf{Site number} & \textbf{Latitude} & \textbf{Longitude} & \textbf{Elevation (m)}\tabularnewline
+\hline 
+\hline 
+La Tola & M002 & 0.23\textsuperscript{o}S & 78.37\textsuperscript{o}E & 2480\tabularnewline
+\hline 
+Rumipamba-Salcedo & M004 & 1.02\textsuperscript{o}S & 78.59\textsuperscript{o}E & 2685\tabularnewline
+\hline 
+Ca\~nar & M031 & 2.55\textsuperscript{o}S & 78.95\textsuperscript{o}E & 3083\tabularnewline
+\hline 
+La Argelia-Loja & M033 & 4.03\textsuperscript{o}S & 79.20\textsuperscript{o}E & 2160\tabularnewline
+\hline 
+Palmas-Azuay & M045 & 2.72\textsuperscript{o}S & 78.63\textsuperscript{o}E & 2400\tabularnewline
+\hline 
+San Gabriel & M103 & 0.60\textsuperscript{o}N & 77.82\textsuperscript{o}E & 2860\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+
+
+\chapter{Climate-bushfire relationships including the Antartic Oscillation
+Index }
+
+\newpage{}
+
+
+\section{Spring climate-bushfire relationships}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.85]{Appendix/Figures/SON-SON_1979_2009}
+\par\end{centering}
+
+\caption[Pearson correlation coeficients for climate-bushfire relationships
+for September-October-November (SON) in Victoria during the period
+1979-2009]{Pearson correlation coeficients for climate-bushfire relationships
+for September-October-November (SON) in Victoria during the period
+1979-2009. Data source: Hadley Centre Sea Ice and Sea Surface Temperature
+data set (HadISST) and weather stations in Victoria (WS). \label{fig:Pearson correlation coeficients for climate-bushfire relationships for September-October-November (SON) in Victoria during the period 1979-2009}}
+
+
+\end{figure}
+
+
+
+\section{Summer climate-bushfire relationships}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.75]{Appendix/Figures/DJF-DJF_1980_2010}
+\par\end{centering}
+
+\caption[Pearson correlation coeficients for climate-bushfire relationships
+for December-January-February (DJF) in Victoria during the period
+1980-2010]{Pearson correlation coeficients for climate-bushfire relationships
+for December-January-February (DJF) in Victoria during the period
+1980-2010. Data source: Hadley Centre Sea Ice and Sea Surface Temperature
+data set (HadISST) and weather stations in Victoria. \label{fig:Pearson correlation coeficients for climate-bushfire relationships for December-January-February (DJF) in Victoria during the period 1980-2010}}
+
+
+\end{figure}
+
+
+
+\section{Spring to summer climate-bushfire relationships}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.65]{Appendix/Figures/SON-DJF_1979_2010}
+\par\end{centering}
+
+\caption[Pearson correlation coeficients for climate-bushfire relationships
+from September-October-November (SON) to December-January-February
+(DJF) in Victoria, Australia during the period 1979-2010]{Pearson correlation coeficients for climate-bushfire relationships
+from September-October-November (SON) to December-January-February
+(DJF) in Victoria, Australia during the period 1979-2010. Panel a)
+shows the results for climate variables, fire weather and bushfire
+activity. Panel b) shows the results for climate indices, fire weather
+and bushfire activity Data source: Hadley Centre Sea Ice and Sea Surface
+Temperature data set (HadISST) and weather stations in Victoria (WS).
+\label{fig:Pearson correlation coeficients for climate-bushfire relationships from September-October-November (SON) to December-January-February (DJF) in Victoria, Australia during the period 1979-2010}}
+
+
+\end{figure}
+
